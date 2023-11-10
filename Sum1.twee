@@ -1,0 +1,649 @@
+:: StoryTitle
+Sum1
+
+
+:: StoryData
+{
+  "ifid": "861FEBCE-8D00-4F4F-97F3-687CB7D4697F",
+  "format": "Harlowe",
+  "format-version": "3.3.7",
+  "start": "Start",
+  "zoom": 1
+}
+
+
+:: A Small Step {"position":"1525,575","size":"100,100"}
+<div class="story">
+  <!-- Set the text to show -->
+  (set: $typewriterText to
+  "Jeff's usual morning routine starts with feeling tired and grabbing his coffee, but today is different...
+  
+  As he reaches for the coffee pot, he takes a pause . . . 
+  Jeff makes a sincere, conscious effort to think about why he's always so exhausted.
+  
+  He stops himself and instead makes a glass of water and completes a few stretches (not quite 15 mins, but close enough), and is surprised by how energsed it makes him feel.
+
+On arrival at work...Jeff is faced with another of his usual decisions...
+
+Does he grab a healthier breakfast choice of porridge, or the usual coffee and pastry?
+")
+
+  <!-- Display (call) the Typewriter passage -->
+  (display: "Typewriter")
+</div>
+
+[Jeff has a decision to make...]
+
+[[Should he choose the porridge? ->Good Breakfast]]
+[[Or stick with tradition, and go for the usual coffee and pastry? ->Bad Breakfast]]
+
+<a href="https://www.webmd.com/food-recipes/breakfast-lose-weight" class="button-class">
+For further information on good breakfast choices click here! </a>
+
+
+:: A new day {"position":"1250,550","size":"100,100"}
+<div class="story">
+  <!-- Set the text to show -->
+  (set: $typewriterText to "Each morning, Jeff's alarm rings, and he wakes up feeling tired and lethargic, dreading the workday ahead. In his rush to get out the door, he habitually skips breakfast at home, opting to rely on coffee to kickstart his day. This caffeine boost is accompanied by a sugary pastry (because it’s right there...so why not), offering a fleeting sense of alertness and satisfaction.
+As Jeff arrives at the office, he grabs another coffee on his way through, as he always does, saving himself from the need to get up again later in the morning. The initial rush fades quickly, leaving him feeling hungry and sluggish. Fortunately, elevenses is just around the corner and to maintain some semblance of energy, he grabs himself just one more coffee and a biscuit to see him through the morning.")
+  <!-- Display (call) the Typewriter passage -->
+  (display: "Typewriter")
+  </div>
+
+[[Desk Delights for One...->Desk Dining]] 
+
+
+:: Another new day {"position":"1100,875","size":"100,100"}
+<div class="story">
+  <!-- Set the text to show -->
+  (set: $typewriterText to "Jeff's alarm rings, as usual.
+  He wakes up feeling tired and lethargic, again.
+  No time for breakfast today. Just the magic elixir that is coffee and pastries...
+
+And perhaps another coffee on arrival...just to see us through until break time,
+
+And just one more (and the habitual biscuit) and we'll get through to lunch.")
+  <!-- Display (call) the Typewriter passage -->
+  (display: "Typewriter")
+
+[[The Lone Luncheon...->Desk Dining2]] 
+
+
+:: Bad Breakfast {"position":"1825,675","size":"100,100"}
+<set $breakfastQuality to "bad">
+
+<div class="work-required-heading">
+Oh dear - not a great start to the day...
+</div>
+
+<div class="story">
+  <!-- Set the text to show -->
+  (set: $typewriterText to
+  "Feeling tired and not yet 'in gear', Jeff grabs his usual coffee and pastry.
+The immediate gratification is real, but he finds himself quickly back in the familiar cycle of feeling tired and relying on caffeine and sugar to get through the morning.
+
+The temporary energy boost from the coffee and pastry is followed by a mid-morning crash, leaving Jeff feeling even more drained.")
+
+  <!-- Display (call) the Typewriter passage -->
+  (display: "Typewriter")
+</div>
+
+[[Building habits->Lunch Time!]]
+ 
+
+
+:: Bad Dinner {"position":"1825,1225","size":"100,100"}
+<set $dinnerQuality to "bad">
+
+<div class="work-required-heading">
+Ah...it seems you've succumbed to the toppings of temptation 
+</div>
+
+<div class="story">
+  <!-- Set the text to show -->
+  (set: $typewriterText to
+"While the allure of a cheesy, delicious pizza is undeniable, it's essential to recognise the potential risks associated with frequent indulgence.
+
+Fast food may offer a quick and satisfying solution in the moment, but its long-term impact on health and well-being can't be ignored.
+
+Opting for these convenient yet often nutritionally lacking choices may provide immediate gratification, but the enduring benefits of making healthier food choices become increasingly apparent over time.
+
+Balancing the appeal of fast food with mindful choices that prioritise long-term well-being ensures a journey towards a healthier and more sustainable lifestyle!")
+
+  <!-- Display (call) the Typewriter passage -->
+  (display: "Typewriter")
+</div>
+
+<div class="custom-iframe-container">
+  <iframe class="custom-iframe" src="https://www.healthline.com/health/fast-food-effects-on-body" frameborder="0"></iframe>
+</div>
+
+
+
+[[Let's see how Jeff got on...->Lets Review]]
+
+
+:: Bad Lunch {"position":"1825,950","size":"100,100"}
+<set $lunchQuality to "bad">
+
+<div class="work-required-heading">
+Hmmm...maybe not the best choice...
+</div>
+
+<div class="story">
+  <!-- Set the text to show -->
+  (set: $typewriterText to
+"Jeff knows this probably wasn't the best choice - but old habits are so hard to break!
+He does feel a sense of comfort from the meal deal...but regonises he's hungry again not long after, and is already thinking about dinner")
+
+  <!-- Display (call) the Typewriter passage -->
+  (display: "Typewriter")
+</div>
+
+[[The dinner time dilemma->Nighttime nourishment]]
+
+
+
+:: Business as usual {"position":"1250,1025","size":"100,100"}
+<div class="story">
+  <!-- Set the text to show -->
+  (set: $typewriterText to
+  "Blimey...is it really only 6 weeks until Christmas?! Where has the year gone, Jeff thinks to himself. It really does fly...
+  
+  Jeff's daydream was suddenly interrupted by his line manager, Sarah messaging him to see if he was free.
+  
+  Jeff confirms he is and meets Sarah in the quiet room...")
+  <!-- Display (call) the Typewriter passage -->
+  (display: "Typewriter")
+</div>
+
+[[Observation...->Observation]] 
+
+
+:: Desk Dining {"position":"1100,700","size":"100,100"}
+<div class="story">
+  <!-- Set the text to show -->
+  (set: $typewriterText to "By the time lunch rolls around, Jeff, a hard-working and dedicated employee, hasn't made as much progress on his work as he had hoped. Feeling stressed and pressed for time, he rushes out to grab his usual lunch: a chicken and bacon sandwich, a bag of steak flavoured McCoys, a chocolate bar, and a seemingly innocent peach iced tea (fruit products area healthier, right?).
+
+He returns to his desk to eat, continuing to work through what should be his lunch break. 
+
+The afternoon stretches on, and Jeff's productivity dwindles as he feels increasingly sluggish and unfocused. 
+
+By the time 6 PM arrives, he's still not completed everything, but his drive has disappeared.
+
+He packs up and heads home, navigating rush hour traffic.")
+  <!-- Display (call) the Typewriter passage -->
+  (display: "Typewriter")
+  </div>
+  
+[[Calling it a day...->Evening]] 
+
+
+:: Desk Dining2 {"position":"1250,875","size":"100,100"}
+<div class="story">
+  <!-- Set the text to show -->
+  (set: $typewriterText to "Jeff still hasn't finished what he'd hoped to yesterday.
+  
+  In fact, looking back over his work, being honest, it doesn't really make sense.
+  
+  Jeff conceeds this is probably another 'working lunch' to tidy this up.
+  He grabs the usual, and gets stuck in.")
+  <!-- Display (call) the Typewriter passage -->
+  (display: "Typewriter")
+</div>
+
+[[Punching Out...->Evening2]] 
+
+
+:: Evening {"position":"1250,700","size":"100,100"}
+<div class="story">
+  <!-- Set the text to show -->
+  (set: $typewriterText to "Exhausted and drained, Jeff finally gets in the door just after 7. 
+  He’s too tired to make something from scratch, so rustles up some frozen breaded chicken and chips for dinner. 
+  After what feels like a long day, he unwinds on the sofa with a beer...or two, before setting tomorrow's alarm.")
+  <!-- Display (call) the Typewriter passage -->
+  (display: "Typewriter")
+  </div>
+  
+  [[Back to the grind...->Another new day]] 
+
+
+:: Evening2 {"position":"1100,1025","size":"100,100"}
+<div class="story">
+  <!-- Set the text to show -->
+  (set: $typewriterText to
+  "It's gone 6 o'clock.
+  Jeff is some-what happy with what he's achieved today, but the whole-day has felt like pushing water up hill, and he's knackered.
+  Time to sign off.
+  As it's late and he's worked hard, today warrants a take-away.")
+  <!-- Display (call) the Typewriter passage -->
+  (display: "Typewriter")
+</div>
+
+[[Business as usual...->Business as usual]] 
+
+
+:: Good Breakfast {"position":"1700,675","size":"100,100"}
+(set: $breakfastQuality to "good")
+
+<div class="celebratory-heading">
+A great start!
+</div>
+
+<div class="story">
+  <!-- Set the text to show -->
+  (set: $typewriterText to
+  "Jeff decides to continue his healthy morning and opts for a breakfast of porridge with fresh berries, but allows himself one coffee. 
+  
+Whilst not his usual preference, it was a surprisingly satisfying choice that fuels his morning.
+
+Additionally, Jeff's decision to prioritise his well-being provides an odd feeling of self-empowerment and control. 
+
+Emmotions aside, he definitely feels alert and focused throughout the morning!
+
+")
+
+  <!-- Display (call) the Typewriter passage -->
+  (display: "Typewriter")
+</div>
+
+[[Building habits->Lunch Time!]]
+
+
+
+:: Good Dinner {"position":"1650,1225","size":"100,100"}
+(set: $dinnerQuality to "good")
+
+<div class="celebratory-heading">
+Great idea!
+</div>
+
+<div class="story">
+  <!-- Set the text to show -->
+  (set: $typewriterText to
+"Cooking from scratch can have so many benefits beyond just the vitamins and nutrient content!
+
+In fact, it is considered beneficial for the mind, body, soul AND for the environment too!
+
+Read the below article for more information...")
+
+  <!-- Display (call) the Typewriter passage -->
+  (display: "Typewriter")
+</div>
+
+<div class="custom-iframe-container">
+  <iframe class="custom-iframe" src="https://www.nutracheck.co.uk/Blog/article?title=the-benefits-of-cooking-from-scratch&tag=ExpertView#url" frameborder="0"></iframe>
+</div>
+
+
+
+[[Let's see how Jeff got on...->Lets Review]]
+
+
+
+
+
+
+:: Good Lunch {"position":"1675,950","size":"100,100"}
+(set: $lunchQuality to "good")
+
+<div class="celebratory-heading">
+A healthy lunch choice!
+</div>
+
+<div class="story">
+  <!-- Set the text to show -->
+  (set: $typewriterText to
+"At lunchtime, instead of his usual unhealthy sandwich, Jeff boldly heads down to the restaurant on the ground floor (taking the stairs today!) and opts for a colourful salad packed with greens, lean proteins, and a vinaigrette dressing.
+
+Not his usual cup of tea, but he’s actually quite impressed by the wide selection. 
+These aren’t the salads he remembers from the past. 
+
+He adds a side of mixed fruit for a refreshing twist.
+
+Later that afternoon, Jeff realises he's not getting his usual hunger-pangs, and feels more productive throughout the afternoon.
+")
+
+  <!-- Display (call) the Typewriter passage -->
+  (display: "Typewriter")
+</div>
+
+[[The dinner time dilemma->Nighttime nourishment]]
+
+
+
+
+
+
+:: Lets Review {"position":"1525,1400","size":"100,100"}
+(set: $isMakingGreatChoices to $breakfastQuality is "good" and $lunchQuality is "good" and $dinnerQuality is "good")
+
+(if: $isMakingGreatChoices)[
+Great work! Jeff has made some great choices today!
+   [[Well Done!|Well Done!]]
+]
+(else:)[
+
+<div class="work-required-heading">
+It seems Jeff may have missed a few opportunities today...
+</div>
+
+Embracing a healthier lifestyle is a journey filled with challenges, and setbacks are a natural part of the process.
+Remember, each positive choice, no matter how small, brings you one step closer to your well-being goals.
+Allow yourself grace for the occasional misstep, for tomorrow is a new opportunity to make mindful choices and continue on your path to a healthier and happier you.
+Stay motivated, stay focused, and celebrate the progress, no matter how minor, on this empowering journey!!
+
+<iframe width="1120" height="730" src="https://www.youtube.com/embed/ft_DXwgUXB0" frameborder="0" allowfullscreen></iframe>
+
+[[Let's go again 💪|A Small Step]]
+]
+
+
+:: Lunch Time! {"position":"1750,825","size":"100,100"}
+<div class="story">
+  <!-- Set the text to show -->
+  (set: $typewriterText to
+  "It's time for lunch, and Jeff has another decision to make...
+
+He's been working hard and is still thinking about the decisions he's made so far today...
+")
+
+  <!-- Display (call) the Typewriter passage -->
+  (display: "Typewriter")
+</div>
+
+What should Jeff choose? If you have time, watch this TedEx video that explores our relationship with food.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/wTNlHyjip94" frameborder="0" allowfullscreen></iframe>
+
+
+
+Should Jeff decides select the nutrient-packed salad and continue his healthy choices?
+[[Pick the salad?->Good Lunch]]
+
+Or, should Jeff stick with what he knows he likes?
+[[Pick the meal deal?->Bad Lunch]]
+
+
+
+
+:: Meet Jeff {"position":"1100,550","size":"100,100"}
+<h1 class="start">
+
+<!-- Set the text to show -->
+(set: $typewriterText to "Meet Jeff...!")
+<!-- Display (call) the Typewriter passage -->
+(display: "Typewriter")
+
+</h1>
+<img src= "https://github.com/llama3d/DTSP/blob/main/MeetJeff.png?raw=true" alt="Image of office worker Jeff" width="343" height="274">
+
+<p>
+(live: 2s) [Jeff is a dedicated and hardworking software developer who often works long hours to meet project deadlines.]
+
+(live: 4s) [Jeff usually commutes to work by car, spending around 45 minutes each way stuck in traffic. He spends most of his working day behind his desk, leading what some may call a sedentary lifestyle.]
+
+(live: 6s) [Jeff frequently experiences lower back pain and has occasional headaches due to sitting for extended periods. He's completed his DSE assessment...but does anyone really implement the recommendations?]
+
+(live: 8s) [Jeff knows he struggles to maintain a balanced diet and is aware of the importance of physical well-being but wonders who has the time to incorporate exercise into their daily routines and the energy to cook at home!?]
+
+[[A new day dawns...->A new day]] 
+
+
+
+
+:: Nighttime nourishment {"position":"1750,1100","size":"100,100"}
+<div class="story">
+  <!-- Set the text to show -->
+  (set: $typewriterText to
+  "It's nearly home time and Jeff is thinking about the final food-related decision for the day.
+  
+  There is pizza in the freezer at home. (When isn't there!?)
+  
+  But, in the spirit of making a change, Jeff knows that he could pick up some fresh ingredients on the way home and prepare something fresh......he could even prepare something for tomorrow too...
+")
+
+  <!-- Display (call) the Typewriter passage -->
+  (display: "Typewriter")
+</div>
+
+What final choice should Jeff take?
+
+[[Make something fresh and meal-prep for tomorrow?->Good Dinner]]
+
+[[The football's on tonight...pizza it is->Bad Dinner]]
+
+
+
+
+:: Observation {"position":"1400,900","size":"100,100"}
+<div class="story">
+  <!-- Set the text to show -->
+  (set: $typewriterText to
+  "After the usual formalities, Sarah pauses for a moment and eventually breaks the silence and asks 'Jeff, I've been meaning to check in with you recently. You seem different lately. Is everything okay?'
+
+Not quite sure what she's reffering to, Jeff enquires 'Different? In what way?'
+
+Well, it's just that you used to be so energetic and on top of things, and now it feels like you're constantly tired and stressed. Your work has been slipping, and you've been absent quite a bit, Sarah explains.
+
+Jeff takes a moment to reflect - 'Errr, I guess I haven't really stopped to think about it! It does perhaps feel like I've been on autopilot for a while now.'
+
+Sarah continues, 'I understand that we all go through tough times, but I care about you, and I've seen you struggling. Is there something going on? Can I help in any way?'
+
+Taking a further moment, Jeff looks at his reflection in the glass... he realises how he may have let himself go and is perhaps in a bit of a rut.
+He conceeds, 'To be honest, I agree. I do feel constantly tired, and I've definitely put  weight on. It's like I'm stuck in this endless cycle! The work and stress feed the habits, that I know aren't great, and I guess the habits feed the stress'.
+
+Well, Sarah suggests, it's never too late to make a change, Jeff, and you don't have to go through this alone! We're here to support you. Let's figure out a plan to help you get back on track and find balance in your life. ")
+
+  <!-- Display (call) the Typewriter passage -->
+  (display: "Typewriter")
+</div>
+
+(live: 8s) [No one ever needs to feel alone.
+There are a wide range of support services available from the NHS and through our internal programmes.
+<a href="https://www.nhs.uk/nhs-app/nhs-app-help-and-support/" class="button-class">
+Click on the link for further information</a>]
+
+
+(set: $breakfastQuality to "")
+(set: $lunchQuality to "")
+(set: $dinnerQuality to "")
+
+
+[[The journey of a thousand miles begins with one step...->A Small Step]]
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kristi&display=swap">
+  <style>
+    body {
+      font-family: 'Kristi', cursive;
+    }
+  </style>
+  <title>Your HTML Document</title>
+</head>
+
+<div class="custom-font">Lao Tzu</div>
+
+
+
+
+
+
+
+:: Start {"position":"975,425","size":"100,100"}
+<div class="start">
+  <!-- Set the text to show -->
+  (set: $typewriterText to "Welcome to Jeff's Well-Being Journey!")
+  <!-- Display (call) the Typewriter passage -->
+  (display: "Typewriter")
+</div>
+
+(live: 2s)[
+    As we progress - try to reflect on whether any of this feels familiar!
+]
+
+[[Continue here...->Meet Jeff]] 
+
+
+:: Typewriter {"position":"1100,300","size":"100,100"}
+{
+	<!-- Create a variable to track the position within the $typewriterText string -->
+	(set: $typewriterPos to 1)
+	
+	<!-- Create a hook to hold the typed text -->
+	|typewriterOutput>[]
+	
+	<!-- Set a delay of 0.2 seconds per loop -->
+	(live: 20ms)[
+
+		<!-- Add the next character to the hook -->
+		(append: ?typewriterOutput)[(print: $typewriterText's $typewriterPos)]
+		
+		<!-- Update the position -->
+		(set: $typewriterPos to it + 1)
+		
+		<!-- If it's gone past the end, stop -->
+		(if: $typewriterPos is $typewriterText's length + 1)[
+			(stop:)
+		]
+	]
+}
+
+
+
+:: Well Done! {"position":"1800,1400","size":"100,100"}
+<div class="celebratory-heading">
+Congratulations on making some, but positive and meaningful choices!
+</div>
+
+<div class="story">
+  <!-- Set the text to show -->
+  (set: $typewriterText to
+"This exercise focused on making a few minor adjustments to promote healthy eating. 
+
+However, there are numerous other subtle changes that can help to create a healthier work-life balance.
+
+These include establishing a consistent sleep routine, prioritising mental health with regular check-ins, taking breaks for relaxation, fostering social connections and support networks, and incorporating moments of physical activity throughout the day - as per the below video.
+
+Embracing these practices will complement one another, collectively contributing to an encompassing sense of well-being.
+
+Please make sure you're looking out for yourselves and for one-another. and thank you for your time!")
+
+  <!-- Display (call) the Typewriter passage -->
+  (display: "Typewriter")
+</div>
+
+ <iframe width="560" height="315" src="https://www.youtube.com/embed/vBQkySm333k" frameborder="0" allowfullscreen></iframe>
+
+
+
+:: StoryStylesheet [stylesheet]
+.start {
+  color: #2c974b;
+  vertical-align: text-top;
+  font-size: 40px;
+}
+
+
+.story {
+  Font-family: Baskerville;
+  color: #FFFFFF;
+  vertical-align: text-top;
+  font-size: 40px;
+}
+
+.links
+
+/* CSS - https://getcssscan.com/css-buttons-examples */
+.button-class {
+  /* Define your styles here */
+  display: inline-block !important; /* Display as a block element */
+  background-color: #007bff !important; /* Blue background color */
+  color: white !important; /* White text color */
+  padding: 20px 30px !important; /* Padding for the button */
+  border: none !important; /* Remove the default button border */
+  cursor: pointer !important; /* Add a pointer cursor on hover */
+  border-radius: 14px !important; /* Add rounded corners */
+  font-size: 36px !important; /* Font size */
+  text-decoration: none !important; /* Remove default underline */
+}
+
+.button-class:focus:not(:focus-visible):not(.focus-visible) {
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+.button-class:hover {
+  background-color: #fff49b !important;
+}
+
+.button-class:focus {
+  box-shadow: rgba(255, 244, 155, .4) 0 0 0 3px !important;
+  outline: none !important;
+}
+
+.button-class:disabled {
+  background-color: #fff49b !important;
+  border-color: rgba(27, 31, 35, .1) !important;
+  color: rgba(255, 255, 255, .8) !important;
+  cursor: default !important;
+}
+
+.button-class:active {
+  background-color: #fff49b !important;
+  box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset !important;
+}
+
+  .custom-iframe-container {
+    background-color: white; /* Set a white background */
+    color: black; /* Set black text color */
+    padding: 20px; /* Add padding for better readability */
+  }
+
+  .custom-iframe {
+    width: 100%;
+    height: 600px; /* Adjust the height as needed */
+  }
+
+
+/* custom-styles.css */
+
+.celebratory-heading {
+  color: #CBA328; /* Golden yellow text color */
+  font-size: 56px; /* Adjust the font size */
+  font-weight: bold; /* Bold text */
+  text-align: center; /* Center the text */
+  background-color: #FFFFF0; /* Background color */
+  padding: 20px; /* Add padding for a spacious look */
+  border-radius: 10px; /* Add rounded corners */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+  line-height: 1.2; /* Adjust line height */
+  margin: 10px 0; /* Add margin for space around the text */
+
+}
+
+.work-required-heading {
+  color: #44404F; /* Arsenic text color */
+  font-size: 56px; /* Adjust the font size */
+  font-weight: bold; /* Bold text */
+  text-align: center; /* Center the text */
+  background-color: #FAE1DF; /* Misty Rose background color */
+  padding: 20px; /* Add padding for a spacious look */
+  border-radius: 10px; /* Add rounded corners */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+  line-height: 1.2; /* Adjust line height */
+  margin: 10px 0; /* Add margin for space around the text */
+}
+
+@font-face {
+  font-family: 'Kristi';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Kristi Regular'), local('Kristi-Regular'), url(https://fonts.gstatic.com/s/kristi/v14/uK_sSmfJoK2OFiBZmXdVaIjQ0.woff2) format('woff2');
+}
+
+.custom-font {
+  font-family: 'Kristi', cursive;
+}
